@@ -1,2 +1,2 @@
-import { camelCase } from "lodash";
-console.log(camelCase("Hello World"));
+import { greeting } from "./greeting";
+console.log(greeting);

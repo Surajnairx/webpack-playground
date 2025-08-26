@@ -1,7 +1,12 @@
+// webpack.config.js
+const path = require("path");
+
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
-    filename: "awesome.js",
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
-  mode: "development",
 };
